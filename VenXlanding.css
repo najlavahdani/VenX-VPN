@@ -7,6 +7,10 @@
     --gray: #A9B0BA;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body{
     margin: 0;
     background-color: var(--background-blue);
@@ -17,4 +21,31 @@ main{
     background: linear-gradient(165deg, var(--dark-blue) 18.01%, var(--light-blue) 60.99%);
     height: 934px;
     width: 100%;
+    padding: 1rem 0.5rem;
+}
+
+/* mobile header styles */
+.page-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+    /* menu styles */
+.menu-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
 }
