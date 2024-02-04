@@ -1,0 +1,20 @@
+/* variables */
+:root{
+    --dark-blue: rgba(0, 11, 50, 1);
+    --light-blue: rgba(10, 34, 255, 0);
+    --btn-color: #7963FF;
+    --background-blue: #B6CCF5;
+    --gray: #A9B0BA;
+}
+
+body{
+    margin: 0;
+    background-color: var(--background-blue);
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    background: linear-gradient(168deg, var(--dark-blue) 25.01%, var(--light-blue) 65.99%);
+    height: 934px;
+    width: 100%;
+}
