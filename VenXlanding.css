@@ -14,7 +14,7 @@ body{
 }
 
 main{
-    background: linear-gradient(168deg, var(--dark-blue) 25.01%, var(--light-blue) 65.99%);
+    background: linear-gradient(165deg, var(--dark-blue) 18.01%, var(--light-blue) 60.99%);
     height: 934px;
     width: 100%;
 }
