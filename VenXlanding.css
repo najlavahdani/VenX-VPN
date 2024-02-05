@@ -17,11 +17,18 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+.circle{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+
 main{
     background: linear-gradient(165deg, var(--dark-blue) 18.01%, var(--light-blue) 60.99%);
     height: 934px;
     width: 100%;
-    padding: 0.1rem 0.5rem;
 }
 
 /* mobile header styles */
@@ -144,6 +151,10 @@ main{
 
 /* responsive codes */
 @media screen and (min-width: 700px){
+    .circle{
+        display: none;
+    }
+
     .logo{
         width: 3rem;
     }
@@ -180,6 +191,10 @@ main{
 
 
 @media screen and (min-width: 900px){
+    .circle{
+        display: block;
+    }
+
     .logo{
         width: 6rem;
     }
