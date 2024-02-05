@@ -180,6 +180,10 @@ main{
     margin-top: 0;
 }
 
+.hidden-in-mobile{
+    display: none;
+}
+
 .vpn-img-container{
     display: flex;
     align-items: center;
@@ -188,6 +192,7 @@ main{
 
 .vpn-img{
     width: 80%;
+    z-index: 1000;
 }
 
 
@@ -255,6 +260,8 @@ main{
         display: block;
     }
 
+
+    /* header styles */
     .logo{
         width: 6rem;
     }
@@ -276,5 +283,38 @@ main{
     .head-part3 a{
         font-size: 16px;
         font-weight: 900;
+    }
+
+    /* about part styles */
+    .about-sec{
+        margin: 5rem 0 0 5rem;
+        flex-direction: row;
+        gap: 0;
+        align-items: flex-start;
+    }
+
+    .vpn-img-container{
+        width: 35%;
+        align-items: flex-start;
+    }
+
+    .vpn-img{
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .about-textual-content {
+        align-items: flex-start;
+        width: 35%;
+    }
+
+    .about-text{
+        width: 80%;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .hidden-in-mobile{
+        display: block;
     }
 }
