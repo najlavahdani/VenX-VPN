@@ -293,6 +293,10 @@ main{
         align-items: flex-start;
     }
 
+    .about-title{
+        font-size: 55px;
+    }
+
     .vpn-img-container{
         width: 35%;
         align-items: flex-start;
