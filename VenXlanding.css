@@ -151,7 +151,15 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.2rem;
+    gap: 3rem;
+}
+
+.about-textual-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .about-title{
@@ -170,6 +178,12 @@ main{
     color: #fff;
     padding: 0 0.5rem;
     margin-top: 0;
+}
+
+.vpn-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .vpn-img{
