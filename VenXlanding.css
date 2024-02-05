@@ -21,7 +21,7 @@ main{
     background: linear-gradient(165deg, var(--dark-blue) 18.01%, var(--light-blue) 60.99%);
     height: 934px;
     width: 100%;
-    padding: 1rem 0.5rem;
+    padding: 0.1rem 0.5rem;
 }
 
 /* mobile header styles */
@@ -93,4 +93,113 @@ main{
 
 .list-item a:hover{
     color: var(--gray);
+}
+
+
+/* desktop header styles */
+.head-part2{
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-part2 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.head-part3{
+    display: none;
+}
+
+.head-part3 a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.head-part3 a:hover{
+    color: var(--gray);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive codes */
+@media screen and (min-width: 700px){
+    .logo{
+        width: 3rem;
+    }
+
+    .name{
+        font-size: 22px;
+        font-weight: 300;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .head-part2{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .head-part2 a{
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    .head-part3{
+        display: block;
+    }
+
+    .head-part3 a{
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+
+
+
+@media screen and (min-width: 900px){
+    .logo{
+        width: 6rem;
+    }
+
+    .name{
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .head-part2{
+        gap: 2.5rem;
+    }
+
+    .head-part2 a{
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .head-part3 a{
+        font-size: 16px;
+        font-weight: 900;
+    }
 }
