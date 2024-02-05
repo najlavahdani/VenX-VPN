@@ -18,16 +18,18 @@
                 <img class="logo" src="vpn project front/UI_Content/VNX 3.png" alt="VneX logo">
                 <span class="name">VenX VPN</span>
             </div>
-            <!-- <div class="menu">
-                <button class="menu-btn"><img src="vpn project front/UI_Content/div.header__mobile-btn.png" alt="menu button"></button>
-                <ul class="mobile-menu">
-                    <li class="list-item">aqq</li>
-                    <li class="list-item">bbb</li>
-                    <li class="list-item">vvv</li>
-                    <li class="list-item">ddd</li>
+            <div class="menu">
+                <button class="menu-btn" onclick="toggleMenu()"><img src="vpn project front/UI_Content/div.header__mobile-btn.png" alt="menu button"></button>
+                <ul class="mobile-menu" id="menu-box">
+                    <div class="cls-btn-container"><button class="close-btn" onclick="toggleMenu()">x</button></div>
+                    <li class="list-item" onclick="toggleMenu()"><a href="#">About</a></li>
+                    <li class="list-item" onclick="toggleMenu()"><a href="#">Platform</a></li>
+                    <li class="list-item" onclick="toggleMenu()"><a href="#">Pricing</a></li>
+                    <li class="list-item" onclick="toggleMenu()"><a href="#">Feedback</a></li>
                 </ul>
-            </div> -->
+            </div>
         </header>
     </main>
+    <script src="VenXlanding.js"></script>
 </body>
 </html>
