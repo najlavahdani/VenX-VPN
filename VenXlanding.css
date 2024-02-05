@@ -17,6 +17,20 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+.btn{
+    padding: 0.5rem 2.5rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--btn-color);
+    border-radius: 3rem;
+    border: 1px solid var(--btn-color);
+    outline-offset: 4px;
+
+    outline-style: solid;
+    outline-color: #7963FF;
+    outline-width: 2px;
+}
+
 .circle{
     position: absolute;
     right: 0;
@@ -128,6 +142,38 @@ main{
 
 .head-part3 a:hover{
     color: var(--gray);
+}
+
+/* about section styles */
+.about-sec{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.about-title{
+    margin-bottom: 0;
+    font-size: 45px;
+    font-weight: 400;
+    background: -webkit-linear-gradient(50.53deg, #FFFFFF 40.32%, rgba(0, 0, 0, 0) 90.04%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-text{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding: 0 0.5rem;
+    margin-top: 0;
+}
+
+.vpn-img{
+    width: 80%;
 }
 
 
