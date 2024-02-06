@@ -5,6 +5,7 @@
     --btn-color: #7963FF;
     --background-blue: #B6CCF5;
     --gray: #A9B0BA;
+    --box-shadow: 20px 20px 100px 0px #3754AA0F;
 }
 
 html{
@@ -195,9 +196,96 @@ main{
     z-index: 1000;
 }
 
+/* platform part styles */
+.platform-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.platform-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.platform-card{
+    background-color: #fff;
+    width: 16rem;
+    height: 15rem;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.platform-card-head{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.platform-card-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.platform-card-icon{
+    height: 2.5rem;
+    width: max-content;
+}
+
+.platform-card-text{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+}
+
+/*platform slider styles */
+.swiper-container {
+    position: relative;
+    height: 10rem;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+} 
+
+.swiper {
+    width: 20rem;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+/* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
 
 
 
+
+
+
+
+
+
+
+
+  
 
 
 

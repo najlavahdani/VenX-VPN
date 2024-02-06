@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap" rel="stylesheet">
+
+    <!-- swiper links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <title>VneX</title>
 </head>
 <body>
@@ -28,7 +32,7 @@
                 <ul class="mobile-menu" id="menu-box">
                     <div class="cls-btn-container"><button class="close-btn" onclick="toggleMenu()">x</button></div>
                     <li class="list-item" onclick="toggleMenu()"><a href="#about">About</a></li>
-                    <li class="list-item" onclick="toggleMenu()"><a href="#">Platform</a></li>
+                    <li class="list-item" onclick="toggleMenu()"><a href="#platform">Platform</a></li>
                     <li class="list-item" onclick="toggleMenu()"><a href="#">Pricing</a></li>
                     <li class="list-item" onclick="toggleMenu()"><a href="#">Feedback</a></li>
                 </ul>
@@ -37,7 +41,7 @@
             <!-- desktop menu -->
             <div class="head-part2">
                 <a href="#about">About</a>
-                <a href="#">Platforms</a>
+                <a href="#platform">Platforms</a>
                 <a href="#">Pricing</a>
                 <a href="#">Feedback</a>
             </div>
@@ -63,7 +67,102 @@
             <div class="vpn-img-container"><img class="vpn-img" src="vpn project front/UI_Content/vpn 1.png" alt="vpn image"></div>
         </section>
         <!-- about end -->
+
+        <!-- platform section start -->
+        <section class="platform-sec" id="platform">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="platform-card-container slide">
+                            <div class="platform-card">
+                                <div class="platform-card-head">
+                                    <img class="platform-card-icon" src="vpn project front/UI_Content/access.svg fill.png" alt="icon">
+                                    <h2 class="platform-card-title">NAJLA VAHDANI</h2>
+                                </div>
+                                <div class="card-content">
+                                    <p class="platform-card-text">Privacy and security matter at VenX. That's why we're excited to offer 
+                                        cryptocurrency payments for your VPN subscription. Opt for added anonymity
+                                        and convenience by paying with popular cryptocurrencies like Bitcoin and Ethereum.
+                                        Trust VenX to keep you secure and private in your online endeavors.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="platform-card-container slide">
+                            <div class="platform-card">
+                                <div class="platform-card-head">
+                                    <img class="platform-card-icon" src="vpn project front/UI_Content/access.svg fill.png" alt="icon">
+                                    <h2 class="platform-card-title">NAJLA VAHDANI</h2>
+                                </div>
+                                <div class="card-content">
+                                    <p class="platform-card-text">Privacy and security matter at VenX. That's why we're excited to offer 
+                                        cryptocurrency payments for your VPN subscription. Opt for added anonymity
+                                        and convenience by paying with popular cryptocurrencies like Bitcoin and Ethereum.
+                                        Trust VenX to keep you secure and private in your online endeavors.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="platform-card-container slide">
+                            <div class="platform-card">
+                                <div class="platform-card-head">
+                                    <img class="platform-card-icon" src="vpn project front/UI_Content/access.svg fill.png" alt="icon">
+                                    <h2 class="platform-card-title">NAJLA VAHDANI</h2>
+                                </div>
+                                <div class="card-content">
+                                    <p class="platform-card-text">Privacy and security matter at VenX. That's why we're excited to offer 
+                                        cryptocurrency payments for your VPN subscription. Opt for added anonymity
+                                        and convenience by paying with popular cryptocurrencies like Bitcoin and Ethereum.
+                                        Trust VenX to keep you secure and private in your online endeavors.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="platform-card-container slide">
+                            <div class="platform-card">
+                                <div class="platform-card-head">
+                                    <img class="platform-card-icon" src="vpn project front/UI_Content/access.svg fill.png" alt="icon">
+                                    <h2 class="platform-card-title">NAJLA VAHDANI</h2>
+                                </div>
+                                <div class="card-content">
+                                    <p class="platform-card-text">Privacy and security matter at VenX. That's why we're excited to offer 
+                                        cryptocurrency payments for your VPN subscription. Opt for added anonymity
+                                        and convenience by paying with popular cryptocurrencies like Bitcoin and Ethereum.
+                                        Trust VenX to keep you secure and private in your online endeavors.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        
+        <!-- platform section end -->
     </main>
     <script src="VenXlanding.js"></script>
+
+    <!-- swiper link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- swiper js code -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        });
+    </script>
 </body>
 </html>
