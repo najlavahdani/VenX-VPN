@@ -540,7 +540,49 @@ main{
     font-weight: 300;
 }
 
+/* footer styles */
+/* mobile footer styles */
+.mobile-footer{
+    background: linear-gradient(359.82deg, #FFFFFF 1.52%, rgba(246, 248, 255, 0) 99.82%);
+    margin-top: 5rem;
+}
 
+.mobile-footer-part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.mobile-footer-vpn-name{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.mobile-footer-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mobile-footer-part2 a{
+    font-size: 12px;
+    text-align: center;
+    width: fit-content;
+    padding: 0 0.1rem ;
+}
+
+.mobile-footer-part3{
+    text-align: center;
+}
+
+.mobile-footer-part3 h5{
+    color: #A9B0BA;
+    font-size: 12px;
+    font-weight: 300;
+    padding-bottom: 2rem;
+}
 
 
 
