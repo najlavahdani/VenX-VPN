@@ -336,6 +336,13 @@ main{
 }
 
 /* pricing section styles */
+.pricing-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .pricing-btn{
     padding: 0.5rem 2.5rem;
     text-decoration: none;
@@ -352,7 +359,7 @@ main{
     outline-width: 2px;
 }
 
-.pricing-cards-container{
+.pricing-card-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,10 +376,15 @@ main{
     justify-content: start;
     align-items: center;
     gap: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.central-pricing-card{
+    background: linear-gradient(180deg, #32258C 0%, #7963FF 100%);
 }
 
 .pricing-card-title{
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 600;
     margin: 0;
     color: #fff;
