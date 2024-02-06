@@ -26,6 +26,7 @@ body{
     border-radius: 3rem;
     border: 1px solid var(--btn-color);
     outline-offset: 4px;
+    text-align: center;
 
     outline-style: solid;
     outline-color: #7963FF;
@@ -419,7 +420,45 @@ main{
     gap: 3rem;
 }
 
+/* pricing part2 styles */
+.pricing2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
 
+.pricing2 img{
+    position: absolute;
+    right: 0;
+    top: 140rem;
+}
+
+.first-pricing2-title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.second-pricing2-title{
+    margin-top: 15rem;
+    padding-left: 1rem;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.pricing2-text{
+    text-align: left;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 1rem;
+}
+
+.pricing2-btn{
+    display: none;
+}
 
 
 
@@ -463,6 +502,16 @@ main{
 
 
 /* responsive codes */
+@media screen and (min-width: 450px){
+    .pricing2 img{
+        top: 145rem;
+    }
+
+    .second-pricing2-title{
+        font-size: 30px;
+    }
+}
+
 @media screen and (min-width: 550px){
     /* platform part2 styles */
     .desktop-third-circle{
@@ -476,6 +525,15 @@ main{
 
     .third-circle{
         display: none;
+    }
+
+    /* pricing part2 styles */
+    .pricing2 img{
+        top: 155rem;
+    }
+
+    .second-pricing2-title{
+        font-size: 40px;
     }
 }
 
@@ -666,6 +724,44 @@ main{
         font-weight: 400;
     }
 
+    /* pricing2 styles */
+    .pricing2{
+        margin-top: 3rem;
+    }
+
+    .first-pricing2-title{
+        font-weight: 400;
+    }
+
+    .pricing2-main-content img{
+        position: static;
+        width: 20rem;
+        height: fit-content;
+    }
+
+    .pricing2-main-content{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 2rem;
+    }
+
+    .second-pricing2-title{
+        margin: 0;
+        font-size: 25px;
+    }
+
+    .pricing2-text{
+        width: 20rem;
+        margin: 0;
+    }
+
+    .pricing2-btn{
+        display: block;
+    }
+
 }
 
 
@@ -705,13 +801,38 @@ main{
     .platform2-text{
         font-size: 18px;
         font-weight: 300;
-        
-
     }
 
     .desktop-third-circle{
         left: 64rem;
         bottom: 9rem;
     }
+
+    /* pricing styles */
+    .pricing-sec{
+        margin-top: 5rem;
+    }
+
+    /* pricing2 styles */
+    .pricing2-main-content{
+        gap: 8rem;
+    }
     
+    .pricing2-texual-content{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .second-pricing2-title{
+        font-size: 35px;
+    }
+
+    .pricing2-text{
+        width: 30rem;
+    }
+
+    .pricing2-btn{
+        width: 10rem;
+    }
 }
