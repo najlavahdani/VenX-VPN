@@ -283,12 +283,16 @@ main{
 }
 
 /* platform part2 styles */
+.platform-desktop-btn{
+    display: none !important;
+}
+
 .third-circle{
     max-height: 10rem;
     width: max-content;
     position: absolute;
     right: 0;
-    bottom: -41rem;
+    bottom: -35rem;
 }
 
 .desktop-third-circle{
@@ -357,6 +361,22 @@ main{
 
 
 /* responsive codes */
+@media screen and (min-width: 550px){
+    /* platform part2 styles */
+    .desktop-third-circle{
+        display: block;
+        max-height: 5rem;
+        width: max-content;
+        position: relative;
+        left: 18rem;
+        bottom: 29rem;
+    }
+
+    .third-circle{
+        display: none;
+    }
+}
+
 @media screen and (min-width: 700px){
     .circle{
         display: none;
@@ -395,18 +415,7 @@ main{
     }
 
     /* platform part2 styles */
-    .third-circle{
-        display: none;
-    }
-
-    .desktop-third-circle{
-        display: block;
-        max-height: 5rem;
-        width: max-content;
-        position: relative;
-        left: 22rem;
-        bottom: 29rem;
-    }
+    
 }
 
 
@@ -495,6 +504,7 @@ main{
 
     .platform-card{
         height: 16rem;
+        width: 14rem;
     }
 
     .desktop-platform-cards{
@@ -509,11 +519,49 @@ main{
         font-weight: 600;
     }
 
+    /* platform part2 styles */
+    .platform-part2{
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .platform2-title{
+        font-size: 40px;
+        font-weight: 400;
+        width: 25rem;
+        text-align: left;
+    }
+
+    .platform2-text{
+        font-size: 16px;
+        font-weight: 300;
+        text-align: left;
+        width: 25rem;
+    }
+
+    .laptop-img-container img{
+        width: 20rem;
+    }
+
+    .desktop-third-circle{
+        left: 50rem;
+        bottom: 7rem;
+    }
+
+    .platform-desktop-btn{
+        display: block !important;
+    }
+
 }
 
 
 @media screen and (min-width: 1200px){
     /* platform styles */
+    .platform-card{
+        width: 16rem;
+    }
+
     .platform-circle{
         width: 18rem;
         bottom: -14rem;
@@ -526,4 +574,31 @@ main{
     .platform-card{
         padding: 1.5rem 2rem;
     }
+
+    /* platform part2 styles */
+    .platform-part2{
+        gap: 4rem;
+        justify-content: center;
+    }
+
+    .laptop-img-container img{
+        width: 30rem;
+    }
+
+    .platform2-content{
+        gap: 1rem;
+    }
+
+    .platform2-text{
+        font-size: 18px;
+        font-weight: 300;
+        
+
+    }
+
+    .desktop-third-circle{
+        left: 64rem;
+        bottom: 9rem;
+    }
+    
 }
