@@ -211,7 +211,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
 }
 
 .platform-card-container{
@@ -359,6 +359,11 @@ main{
     outline-width: 2px;
 }
 
+.pricing-title{
+    font-size: 20px;
+    font-weight: 400;
+}
+
 .pricing-card-container{
     display: flex;
     justify-content: center;
@@ -390,7 +395,7 @@ main{
     color: #fff;
 }
 
-.pricing-text{
+.pricing-card-text{
     color: #fff;
     font-size: 20px;
     font-weight: 300;
