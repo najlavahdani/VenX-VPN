@@ -461,6 +461,12 @@ main{
 }
 
 /* feedback section styles */
+.feedback-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .feedback-title{
     font-size: 20px;
     font-weight: 600;
