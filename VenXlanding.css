@@ -515,7 +515,13 @@ main{
     color: #3C3C3C;
 }
 
-
+.desktop-feedback-cards{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
 
 
 
@@ -631,6 +637,9 @@ main{
     }
     
     /* feedback styles */
+    .feedback-title{
+        font-size: 26px;
+    }
 }
 
 
@@ -816,6 +825,10 @@ main{
         display: block;
     }
 
+    /* feedback styles */
+    .desktop-feedback-cards{
+        display: flex;
+    }
 }
 
 
@@ -888,5 +901,14 @@ main{
 
     .pricing2-btn{
         width: 10rem;
+    }
+
+    /* feedback styles */
+    .desktop-feedback-cards{
+        gap: 3rem;
+    }
+
+    .feedback-title{
+        font-size: 30px;
     }
 }
