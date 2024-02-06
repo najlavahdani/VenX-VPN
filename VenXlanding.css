@@ -384,6 +384,14 @@ main{
     box-shadow: var(--box-shadow);
 }
 
+.name-rate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .central-pricing-card{
     background: linear-gradient(180deg, #32258C 0%, #7963FF 100%);
 }
@@ -403,6 +411,14 @@ main{
     text-align: center;
     margin: 0;
 }
+
+.desktop-pricing-card{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
 
 
 
@@ -462,6 +478,7 @@ main{
         display: none;
     }
 }
+
 
 @media screen and (min-width: 700px){
     .circle{
@@ -637,6 +654,16 @@ main{
 
     .platform-desktop-btn{
         display: block !important;
+    }
+
+    /* pricing styles */
+    .desktop-pricing-card{
+        display: flex;
+    }
+
+    .pricing-title{
+        font-size: 45px;
+        font-weight: 400;
     }
 
 }
