@@ -288,7 +288,11 @@ main{
     width: max-content;
     position: absolute;
     right: 0;
-    bottom: -43rem;
+    bottom: -41rem;
+}
+
+.desktop-third-circle{
+    display: none;
 }
 
 .platform-part2{
@@ -302,6 +306,7 @@ main{
 .platform2-title{
     font-size: 18px;
     font-weight: bolder;
+    margin-bottom: 0;
 }
 
 .platform2-content{
@@ -317,7 +322,7 @@ main{
     font-size: 15px;
     font-weight: 400;
     text-align: left;
-    width: 20rem;
+    width: 16rem;
     line-height: 26px;
 }
 
@@ -325,6 +330,8 @@ main{
     margin-top: 1rem;
     width: 15rem;
 }
+
+
 
 
 
@@ -385,6 +392,20 @@ main{
     .head-part3 a{
         font-size: 13px;
         font-weight: 500;
+    }
+
+    /* platform part2 styles */
+    .third-circle{
+        display: none;
+    }
+
+    .desktop-third-circle{
+        display: block;
+        max-height: 5rem;
+        width: max-content;
+        position: relative;
+        left: 22rem;
+        bottom: 29rem;
     }
 }
 
