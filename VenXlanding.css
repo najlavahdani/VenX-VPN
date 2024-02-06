@@ -282,7 +282,49 @@ main{
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%) !important;
 }
 
+/* platform part2 styles */
+.third-circle{
+    max-height: 10rem;
+    width: max-content;
+    position: absolute;
+    right: 0;
+    bottom: -43rem;
+}
 
+.platform-part2{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.platform2-title{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.platform2-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.platform2-text{
+    padding: 0 1rem;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    width: 20rem;
+    line-height: 26px;
+}
+
+.laptop-img-container img{
+    margin-top: 1rem;
+    width: 15rem;
+}
 
 
 
