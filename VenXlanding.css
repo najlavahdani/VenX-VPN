@@ -335,6 +335,75 @@ main{
     width: 15rem;
 }
 
+/* pricing section styles */
+.pricing-btn{
+    padding: 0.5rem 2.5rem;
+    text-decoration: none;
+    color: #5100bb;
+    background-color: #fff;
+    border-radius: 3rem;
+    border: 1px solid var(--btn-color);
+    outline-offset: 4px;
+    font-size: 16px;
+    font-weight: 900;
+
+    outline-style: solid;
+    outline-color: #7963FF;
+    outline-width: 2px;
+}
+
+.pricing-cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-card{
+    width: 15rem;
+    height: 19rem;
+    background: linear-gradient(216.54deg, #7963FF 5.19%, #2F2286 96.8%);
+    padding: 1.5rem 0.8rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.pricing-card-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+}
+
+.pricing-text{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 34px;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
