@@ -523,6 +523,24 @@ main{
     margin-bottom: 2rem;
 }
 
+.desktop-part{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(359.4deg, #FFFFFF -0.82%, rgba(255, 255, 255, 0) 86.8%);
+    /* margin-top: 4rem; */
+}
+
+.desktop-part-title{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+
 
 
 
@@ -827,6 +845,14 @@ main{
 
     /* feedback styles */
     .desktop-feedback-cards{
+        display: flex;
+    }
+
+    .get-vpn-btn{
+        display: none;
+    }
+
+    .desktop-part{
         display: flex;
     }
 }
