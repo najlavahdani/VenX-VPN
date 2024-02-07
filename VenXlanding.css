@@ -18,6 +18,20 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+/* scrollbar  */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #4a4949;
+    border-radius: 3rem;
+}
+
 .btn{
     padding: 0.5rem 2.5rem;
     text-decoration: none;
