@@ -230,7 +230,7 @@
                                     Only at 2.99$ 
                                 </p>
                 
-                                <a href="#" class="pricing-btn">Activate Now</a>
+                                <a onclick="toggleModal()" href="#" class="pricing-btn">Activate Now</a>
                             </div>
                         </div>
                     </div>
@@ -257,7 +257,7 @@
                                     Subscription Only at 17.96$  
                                 </p>
                 
-                                <a href="#" class="pricing-btn">Activate Now</a>
+                                <a onclick="toggleModal()" href="#" class="pricing-btn">Activate Now</a>
                             </div>
                         </div>
                     </div>
@@ -286,7 +286,7 @@
                                     Only at 35.99$
                                 </p>
                 
-                                <a href="#" class="pricing-btn">Activate Now</a>
+                                <a onclick="toggleModal()" href="#" class="pricing-btn">Activate Now</a>
                             </div>
                         </div>
                     </div>
@@ -316,7 +316,7 @@
                         Only <br> at 3.99$ 
                     </p>
     
-                    <a href="#" class="pricing-btn">Activate Now</a>
+                    <a onclick="toggleModal()" href="#" class="pricing-btn">Activate Now</a>
                 </div>
 
                 <div class="pricing-card central-pricing-card">
@@ -337,7 +337,7 @@
                         Subscription Only at 17.96$  
                     </p>
     
-                    <a href="#" class="pricing-btn">Activate Now</a>
+                    <a onclick="toggleModal()" href="#" class="pricing-btn">Activate Now</a>
                 </div>
 
                 <div class="pricing-card">
@@ -360,14 +360,14 @@
                         Only at 35.99$
                     </p>
     
-                    <a href="#" class="pricing-btn">Activate Now</a>
+                    <a onclick="toggleModal()" href="#" class="pricing-btn">Activate Now</a>
                 </div>
             </div>
             <!-- desktop version end -->
 
             <!-- modal start -->
             <div class="modal-container">
-                <span class="close-modal-btn">x</span>
+                <span onclick="toggleModal()" class="close-modal-btn">x</span>
                 <form class="activation-form">
                     <div class="input-container">
                         <label for="email-address">Email:</label>
@@ -376,14 +376,14 @@
 
                     <div class="input-container">
                         <label for="txid">TXid:</label>
-                        <input required id="txid" type="number">
+                        <input required id="txid" type="text">
                     </div>
 
                     <div class="input-container">
                         <label for="waller-address">Wallet Address:</label>
                         <input required id="waller-address" type="text">
                     </div>
-                    <input type="submit">
+                    <input class="submit-btn btn" type="submit">
                 </form>
             </div>
             <!-- modal end -->

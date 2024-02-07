@@ -424,9 +424,12 @@ main{
 .modal-container{
     background-color: #fff;
     width: 15rem;
-    height:fit-content;
-    padding: 2rem 0;
+    height: fit-content;
+    padding: 1rem 0;
     z-index: 999999;
+    border-radius: 20px;
+    position: fixed;
+    top: -100rem;
 }
 
 .activation-form{
@@ -442,6 +445,24 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.close-modal-btn{
+    text-align: right;
+    color: red;
+    position: relative;
+    left: 13.5rem;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.input-container input{
+    border: 1px solid var(--btn-color);
+    border-radius: 2px;
+}
+
+.activation-form label{
+    color: var(--btn-color);
 }
 
 /* pricing part2 styles */

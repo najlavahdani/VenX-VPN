@@ -9,6 +9,15 @@ function toggleMenu() {
     }
 }
 
+function toggleModal(){
+  const modal = document.querySelector('.modal-container');
+  if(modal.style.top === '-100rem'){
+    modal.style.top = '1rem';
+  } else if(modal.style.top = '1rem') {
+    modal.style.top = '-100rem';
+  }
+}
+
 
 
 
