@@ -552,7 +552,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
 }
 
 .footer-vpn-name{
@@ -572,6 +571,8 @@ main{
     text-align: center;
     width: fit-content;
     padding: 0 0.1rem ;
+    text-decoration: none;
+    color: #A851FF;
 }
 
 .footer-part3{
@@ -900,7 +901,24 @@ main{
     }
 
     /* footer styles */
-    
+    .footer{
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 8rem;
+    }
+
+    .footer-part3 h5{
+        padding: 0;
+    }
+
+    .desktop-part2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+    }
 }
 
 
