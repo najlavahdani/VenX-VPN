@@ -420,6 +420,30 @@ main{
     gap: 3rem;
 }
 
+/* activation form styles */
+.modal-container{
+    background-color: #fff;
+    width: 15rem;
+    height:fit-content;
+    padding: 2rem 0;
+    z-index: 999999;
+}
+
+.activation-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* pricing part2 styles */
 .pricing2{
     display: flex;
