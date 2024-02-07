@@ -27,6 +27,7 @@ body{
     border: 1px solid var(--btn-color);
     outline-offset: 4px;
     text-align: center;
+    cursor: pointer;
 
     outline-style: solid;
     outline-color: #7963FF;
@@ -71,10 +72,12 @@ main{
     background: none;
     border: none;
     cursor: pointer;
+    cursor: pointer;
 }
 
 .mobile-menu{
     border: 0.02rem solid #fff;
+    background: linear-gradient(359.82deg, #FFFFFF 1.52%, rgba(246, 248, 255, 0) 99.82%);
     border-radius: 0.2rem;
     padding: 0;
     width: 10rem;
@@ -82,7 +85,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 3.5rem;
     right: 0;
     z-index: 1000;
@@ -110,13 +113,10 @@ main{
 }
 
 .list-item a{
-    color: #fff;
+    color: #A851FF;
     text-decoration: none;
 }
 
-.list-item a:hover{
-    color: var(--gray);
-}
 
 
 /* desktop header styles */
@@ -358,6 +358,7 @@ main{
     outline-style: solid;
     outline-color: #7963FF;
     outline-width: 2px;
+    cursor: pointer;
 }
 
 .pricing-title{
@@ -930,6 +931,7 @@ main{
 
     .pricing2-btn{
         display: block;
+        cursor: pointer;
     }
 
     /* feedback styles */
@@ -1036,6 +1038,7 @@ main{
 
     .pricing2-btn{
         width: 10rem;
+        cursor: pointer;
     }
 
     /* feedback styles */
