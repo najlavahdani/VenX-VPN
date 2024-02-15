@@ -9,7 +9,7 @@
 }
 
 html{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
 }
 
@@ -453,14 +453,25 @@ main{
 
 /* activation form styles */
 .modal-container{
-    background-color: #fff;
-    width: 15rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    width: 20rem;
     height: fit-content;
     padding: 1rem 0;
     z-index: 999999;
-    border-radius: 20px;
+    border-radius: 10px;
     position: fixed;
-    top: -100rem;
+    top: -110rem;
+    opacity: 0;
+    
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.modal-title{
+    text-align: center;
 }
 
 .activation-form{
@@ -475,25 +486,37 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .close-modal-btn{
     text-align: right;
     color: red;
     position: relative;
-    left: 13.5rem;
-    font-size: larger;
+    left: 17rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 
 .input-container input{
-    border: 1px solid var(--btn-color);
+    border: 1px solid var(--background-blue);
+    background-color: transparent;
     border-radius: 2px;
+    width: 12rem;
+    padding: 0.5rem;
 }
 
 .activation-form label{
-    color: var(--btn-color);
+    color: #000;
+}
+
+.submit-btn{
+    border: none;
+    background-color: var(--btn-color);
+    font-size: larger;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border-radius: 0.3rem;
 }
 
 /* pricing part2 styles */

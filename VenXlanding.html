@@ -184,7 +184,7 @@
 
             <!-- platform part2 start -->
             <div class="platform-part2">
-                <img class="third-circle" src="vpn project front/UI_Content/third-circle.png" alt="circle">
+                <!-- <img class="third-circle" src="vpn project front/UI_Content/third-circle.png" alt="circle"> -->
                 <img class="desktop-third-circle" src="vpn project front/UI_Content/desktop-third-circle.png" alt="circle">
 
                 <div class="laptop-img-container">
@@ -231,7 +231,7 @@
                                     Only at 2.99$ 
                                 </p>
                 
-                                <span onclick="toggleModal()" class="pricing-btn">Activate Now</span>
+                                <span class="pricing-btn">Activate Now</span>
                             </div>
                         </div>
                     </div>
@@ -258,7 +258,7 @@
                                     Subscription Only at 17.96$  
                                 </p>
                 
-                                <span onclick="toggleModal()" href="#" class="pricing-btn">Activate Now</span>
+                                <span href="#" class="pricing-btn">Activate Now</span>
                             </div>
                         </div>
                     </div>
@@ -287,7 +287,7 @@
                                     Only at 35.99$
                                 </p>
                 
-                                <span onclick="toggleModal()" class="pricing-btn">Activate Now</span>
+                                <span class="pricing-btn">Activate Now</span>
                             </div>
                         </div>
                     </div>
@@ -317,7 +317,7 @@
                         Only <br> at 3.99$ 
                     </p>
     
-                    <span onclick="toggleModal()" class="pricing-btn">Activate Now</span>
+                    <span class="pricing-btn">Activate Now</span>
                 </div>
 
                 <div class="pricing-card central-pricing-card">
@@ -338,7 +338,7 @@
                         Subscription Only at 17.96$  
                     </p>
     
-                    <span onclick="toggleModal()" class="pricing-btn">Activate Now</span>
+                    <span class="pricing-btn">Activate Now</span>
                 </div>
 
                 <div class="pricing-card">
@@ -361,32 +361,33 @@
                         Only at 35.99$
                     </p>
     
-                    <span onclick="toggleModal()" class="pricing-btn">Activate Now</span>
+                    <span class="pricing-btn">Activate Now</span>
                 </div>
             </div>
             <!-- desktop version end -->
 
             <!-- modal start -->
             <div class="modal-container">
-                <span onclick="toggleModal()" class="close-modal-btn">x</span>
+                <span class="close-modal-btn">x</span>
+                <h1 class="modal-title">Payment Form</h1>
                 <form class="activation-form">
                     <div class="input-container">
                         <label for="email-address">Email:</label>
-                        <input required id="email-address" type="email">
+                        <input required id="email-address" placeholder="info@email.com" type="email">
                     </div>
 
                     <div class="input-container">
-                        <label for="txid">TXid:</label>
-                        <input required id="txid" type="text">
+                        <label for="txid">Txid:</label>
+                        <input required id="txid" placeholder="Txid" type="text">
                     </div>
 
                     <div class="input-container">
                         <label for="waller-address">Wallet Address:</label>
-                        <input required id="waller-address" type="text">
+                        <input required id="waller-address" placeholder="waller Address" type="text">
                     </div>
-                    <input class="submit-btn btn" type="submit">
+                    <input class="submit-btn" type="submit">
                 </form>
-            </div>
+            </div> 
             <!-- modal end -->
 
 

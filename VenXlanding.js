@@ -1,7 +1,7 @@
 // menu handling
 const menuBtn = document.querySelector('.menu-btn');
 const clsBtn = document.querySelector('.close-btn');
-var menu = document.querySelector('.mobile-menu');
+const menu = document.querySelector('.mobile-menu');
 
 menuBtn.addEventListener('click', function() {
     mobileMenu.style.left = '-100%';
@@ -36,17 +36,30 @@ window.addEventListener('scroll', handleScroll);
 
 
 
-//toggle mofal styles
-function toggleModal(){
-  const modal = document.querySelector('.modal-container');
-  if(modal.style.top === '-100rem'){
-    modal.style.top = '1rem';
-  } else if(modal.style.top = '1rem') {
-    modal.style.top = '-100rem';
-  }
-}
+//toggle modal styles
+// function toggleModal(){
+//   const modal = document.querySelector('.modal-container');
+//   if(modal.style.top === '-100rem'){
+//     modal.style.top = '1rem';
+//   } else if(modal.style.top = '1rem') {
+//     modal.style.top = '-100rem';
+//   }
+// }
 
+const modal = document.querySelector('.modal-container');
+const pricingBtn = document.querySelectorAll('.pricing-btn');
+pricingBtn.forEach(pricingBtn => {
+  pricingBtn.addEventListener('click', function(){
+    modal.style.opacity = '1';
+    modal.style.top = '2rem';
+  })
+});
 
+const clsModalBtn = document.querySelector('.close-modal-btn');
+clsModalBtn.addEventListener('click', function(){
+  modal.style.opacity = '0';
+  modal.style.top = '-110rem';
+})
 
 // Get a reference to the mobile menu element
 const mobileMenu = document.querySelector('.mobile-menu');
