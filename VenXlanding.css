@@ -10,6 +10,7 @@
 
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -42,7 +43,6 @@ html::-webkit-scrollbar-thumb{
     outline-offset: 4px;
     text-align: center;
     cursor: pointer;
-
     outline-style: solid;
     outline-color: #7963FF;
     outline-width: 2px;
@@ -81,7 +81,7 @@ main{
     font-weight: 300;
 }
 
-    /* menu styles */
+    /*mobile menu styles */
 .menu-btn{
     background: none;
     border: none;
@@ -90,21 +90,32 @@ main{
 }
 
 .mobile-menu{
-    border: 0.02rem solid #fff;
-    background: linear-gradient(359.82deg, #FFFFFF 1.52%, rgba(246, 248, 255, 0) 99.82%);
-    border-radius: 0.2rem;
+    background-color: var(--dark-blue);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
     padding: 0;
-    width: 10rem;
-    /* display: flex; */
+    width: 100%;
+    height: 90%;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: fixed;
     top: 3.5rem;
-    right: 0;
-    z-index: 1000;
-    display: none; /* Initially hide the mobile menu */
+    right: 100%; /* Initially hide the mobile menu */
+    z-index: 10000; 
+    left: 0;
+    transition: all 0.5s ease 0s;
+    transform: translateX(100%);
 }
+
+.mobile-menu.active{
+    left: -100%;
+}
+
+
+/* opening */
+
 
 .cls-btn-container{
     width: 100%;

@@ -1,13 +1,12 @@
-function toggleMenu() {
-    const menuBox = document.getElementById('menu-box');
-    if (menuBox.style.display === 'flex') {
-        // If the menu is displayed, hide it
-        menuBox.style.display = 'none';
-    } else {
-        // If the menu is hidden, display it
-        menuBox.style.display = 'flex';
-    }
-}
+// menu handling
+var menuBtn = document.querySelectorAll('.menu-btn');
+
+menuBtn.forEach(function(menuBtn) {
+    menuBtn.addEventListener('click', function() {
+        var menu = document.querySelector('.mobile-menu');
+        menu.classList.toggle('active');
+    });
+});
 
 function toggleModal(){
   const modal = document.querySelector('.modal-container');
