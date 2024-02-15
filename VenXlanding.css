@@ -244,7 +244,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
 }
 
 .platform-card-container{
@@ -364,8 +363,7 @@ main{
 }
 
 .laptop-img-container img{
-    margin-top: 1rem;
-    width: 15rem;
+    width: 25rem;
 }
 
 /* pricing section styles */
