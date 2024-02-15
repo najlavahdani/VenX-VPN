@@ -509,7 +509,9 @@ main{
 .pricing2 img{
     position: absolute;
     right: 0;
-    top: 140rem;
+    top: 142rem;
+    width: 13rem;
+    height: fit-content;
 }
 
 .first-pricing2-title{
@@ -705,7 +707,7 @@ main{
 /* responsive codes */
 @media screen and (min-width: 450px){
     .pricing2 img{
-        top: 145rem;
+        top: 150rem;
     }
 
     .second-pricing2-title{
