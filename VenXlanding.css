@@ -115,10 +115,6 @@ main{
     -webkit-box-direction: normal;
 }
 
-.mobile-menu.active{
-    left: -100%; 
-}
-
 .cls-btn-container{
     width: 100%;
     display: flex;

@@ -4,8 +4,7 @@ const clsBtn = document.querySelector('.close-btn');
 var menu = document.querySelector('.mobile-menu');
 
 menuBtn.addEventListener('click', function() {
-    menu.classList.toggle('active');
-
+    mobileMenu.style.left = '-100%';
     // menuBtn.style.display = 'none';
     menuBtn.style.display = 'none';
     clsBtn.style.display = 'block';
@@ -13,10 +12,27 @@ menuBtn.addEventListener('click', function() {
 
 
 clsBtn.addEventListener('click', function(){
-      menu.classList.toggle('active');
+      mobileMenu.style.left = '0';
       menuBtn.style.display = 'block';
       clsBtn.style.display = 'none'; 
 })
+
+// Function to handle scroll events
+function handleScroll() {
+  // Check the current scroll position
+  const scrollPosition = window.scrollY;
+
+  // If the scroll position is 5rem (80px) or more, hide the mobile menu
+  if (scrollPosition >= 5 * parseFloat(getComputedStyle(document.documentElement).fontSize)) {
+    mobileMenu.style.left = '0';
+    menuBtn.style.display = 'block';
+    clsBtn.style.display = 'none'; 
+  } 
+}
+
+// Attach the scroll event listener
+window.addEventListener('scroll', handleScroll);
+
 
 
 
