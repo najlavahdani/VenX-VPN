@@ -1,13 +1,26 @@
 // menu handling
-var menuBtn = document.querySelectorAll('.menu-btn');
+const menuBtn = document.querySelector('.menu-btn');
+const clsBtn = document.querySelector('.close-btn');
+var menu = document.querySelector('.mobile-menu');
 
-menuBtn.forEach(function(menuBtn) {
-    menuBtn.addEventListener('click', function() {
-        var menu = document.querySelector('.mobile-menu');
-        menu.classList.toggle('active');
-    });
+menuBtn.addEventListener('click', function() {
+    menu.classList.toggle('active');
+
+    // menuBtn.style.display = 'none';
+    menuBtn.style.display = 'none';
+    clsBtn.style.display = 'block';
 });
 
+
+clsBtn.addEventListener('click', function(){
+      menu.classList.toggle('active');
+      menuBtn.style.display = 'block';
+      clsBtn.style.display = 'none'; 
+})
+
+
+
+//toggle mofal styles
 function toggleModal(){
   const modal = document.querySelector('.modal-container');
   if(modal.style.top === '-100rem'){
@@ -18,19 +31,8 @@ function toggleModal(){
 }
 
 
+
 // Get a reference to the mobile menu element
 const mobileMenu = document.querySelector('.mobile-menu');
 
-// Function to handle scroll events
-function handleScroll() {
-  // Check the current scroll position
-  const scrollPosition = window.scrollY;
 
-  // If the scroll position is 5rem (80px) or more, hide the mobile menu
-  if (scrollPosition >= 5 * parseFloat(getComputedStyle(document.documentElement).fontSize)) {
-    mobileMenu.style.display = 'none';
-  } 
-}
-
-// Attach the scroll event listener
-window.addEventListener('scroll', handleScroll);
