@@ -1,21 +1,31 @@
 // menu handling
 const menuBtn = document.querySelector('.menu-btn');
-const clsBtn = document.querySelector('.close-btn');
+const clsMenuBtn = document.querySelector('.close-btn');
 const menu = document.querySelector('.mobile-menu');
 
 menuBtn.addEventListener('click', function() {
     mobileMenu.style.left = '-100%';
     // menuBtn.style.display = 'none';
     menuBtn.style.display = 'none';
-    clsBtn.style.display = 'block';
+    clsMenuBtn.style.display = 'block';
 });
 
 
-clsBtn.addEventListener('click', function(){
+clsMenuBtn.addEventListener('click', function(){
       mobileMenu.style.left = '0';
       menuBtn.style.display = 'block';
-      clsBtn.style.display = 'none'; 
+      clsMenuBtn.style.display = 'none'; 
 })
+
+//close menu when click in each list item
+const menuItems = document.querySelectorAll('.list-item');
+menuItems.forEach(menuItem => {
+  menuItem.addEventListener('click', function(){
+    mobileMenu.style.left = '0';
+    menuBtn.style.display = 'block';
+    clsMenuBtn.style.display = 'none'; 
+  })
+});
 
 // Function to handle scroll events
 function handleScroll() {
@@ -26,7 +36,7 @@ function handleScroll() {
   if (scrollPosition >= 5 * parseFloat(getComputedStyle(document.documentElement).fontSize)) {
     mobileMenu.style.left = '0';
     menuBtn.style.display = 'block';
-    clsBtn.style.display = 'none'; 
+    clsMenuBtn.style.display = 'none'; 
   } 
 }
 
@@ -35,16 +45,6 @@ window.addEventListener('scroll', handleScroll);
 
 
 
-
-//toggle modal styles
-// function toggleModal(){
-//   const modal = document.querySelector('.modal-container');
-//   if(modal.style.top === '-100rem'){
-//     modal.style.top = '1rem';
-//   } else if(modal.style.top = '1rem') {
-//     modal.style.top = '-100rem';
-//   }
-// }
 
 const modal = document.querySelector('.modal-container');
 const pricingBtn = document.querySelectorAll('.pricing-btn');
