@@ -17,7 +17,7 @@ clsMenuBtn.addEventListener('click', function(){
       clsMenuBtn.style.display = 'none'; 
 })
 
-//close menu when click in each list item
+//close menu when click on each list item
 const menuItems = document.querySelectorAll('.list-item');
 menuItems.forEach(menuItem => {
   menuItem.addEventListener('click', function(){
@@ -63,5 +63,6 @@ clsModalBtn.addEventListener('click', function(){
 
 // Get a reference to the mobile menu element
 const mobileMenu = document.querySelector('.mobile-menu');
+
 
 
