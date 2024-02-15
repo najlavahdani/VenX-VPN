@@ -51,7 +51,7 @@ const pricingBtn = document.querySelectorAll('.pricing-btn');
 pricingBtn.forEach(pricingBtn => {
   pricingBtn.addEventListener('click', function(){
     modal.style.opacity = '1';
-    modal.style.top = '2rem';
+    modal.style.top = '5rem';
   })
 });
 
