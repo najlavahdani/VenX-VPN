@@ -652,6 +652,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 .cu-form{
@@ -675,6 +676,22 @@ main{
     border: none;
     padding: 0.5rem;
     border-radius: 4px;
+}
+
+
+/* privacy policy styles */
+.privacy-container{
+    /* background-color: #98aed7; */
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.privacy-content{
+    color: #413f3f;
+    text-justify: newspaper;
+
 }
 
 /* footer styles */
@@ -1060,6 +1077,11 @@ main{
         justify-content: center;
         align-items: center;
         gap: 10rem;
+    }
+
+    .privacy-container{
+        background-color: #fff;
+        margin: 0;
     }
 }
 
