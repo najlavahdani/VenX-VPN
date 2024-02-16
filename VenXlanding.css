@@ -671,7 +671,7 @@ main{
 }
 
 .cu-form-item input, #cu-enquiry{
-    width: 40rem;
+    width: 15rem;
     border: none;
     padding: 0.5rem;
     border-radius: 4px;
@@ -794,6 +794,7 @@ main{
     .second-pricing2-title{
         font-size: 40px;
     }
+
 }
 
 
@@ -837,6 +838,10 @@ main{
     /* feedback styles */
     .feedback-title{
         font-size: 26px;
+    }
+
+    .cu-form-item input, #cu-enquiry{
+        width: 40rem;
     }
 }
 
