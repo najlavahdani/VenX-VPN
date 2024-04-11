@@ -1,0 +1,183 @@
+body{
+    background-color: #FCF4FF;
+    font-family: 'Inter', sans-serif;
+}
+
+/* variables */
+:root{
+    --box-shadow: 0px 4px 4px 0px #00000040;
+    --border-color: #8582FE;
+    --gray: #BBBBBB;
+    --green: #00814B;
+    --green-highlight: rgba(94, 253, 110, 0.4)
+}
+
+.clicked{
+    color: #74788D !important;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title-container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 8px;
+    width: 100%;
+}
+
+.card-title-container h5{
+    margin: 0;
+}
+
+.main-card{
+    margin-top: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 22px;
+    background: linear-gradient(255.74deg, #A3A2FF 22.24%, #CFCEFF 80.96%);
+    box-shadow: var(--box-shadow);
+    padding: 1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    width: 85%;
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 8px;
+    font-size: 14px;
+    text-align: left !important;
+}
+
+.card-footer span{
+    color: var(--green);
+    background-color: var(--green-highlight);
+    border-radius: 4px;
+    padding: 0 4px;
+}
+
+.main-content{
+    margin: 1rem 1rem;
+}
+
+/* title style */
+.title-container{
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.dashboard-title{
+    margin-bottom: 5px;
+}
+
+.path-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bolder;
+}
+
+.path-container a{
+    text-decoration: none;
+    color: #000;
+    font-weight: lighter;
+}
+
+
+
+/* pay card */
+.pay-card button{
+    margin-bottom: 0.5rem;
+    border: none;
+    background-color: var(--gray);
+    color: #fff;
+    border-radius: 30px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+
+/* buttons */
+.buttons-container{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.buttons-container a{
+    background-color: none;
+    border: 1px solid var(--gray);
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    font-size: 80%;
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 30px;
+}
+
+.configs{
+    background: linear-gradient(259.59deg, #5156BE 23.09%, #262858 116.28%);
+}
+
+.partner{
+    background: linear-gradient(108.66deg, #5156BE 12.62%, #262858 124.3%);
+}
+
+
+/* direct sell */
+.direct-sell-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.direct-sell-content h2{
+    margin: 0 0 5px 0;
+}
+
+.referral-id p{
+    font-size: 10px;
+}
+
+.copy-id{
+    display: flex;
+    align-items: center;
+    background-color: rgb(79, 85, 191);
+    border-radius: 9px;
+}
+
+.copy-id button{
+    background-color: rgb(79, 85, 191);
+    border: none;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.copy-id img{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 15%;
+    padding: 10px;
+    border-radius: 9px 0 0 9px;
+}
+
+/* total profile styles */
+.total-profile h1{
+    margin-bottom: 10px;
+}
