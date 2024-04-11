@@ -12,6 +12,10 @@ body{
     --green-highlight: rgba(94, 253, 110, 0.4)
 }
 
+.desktop-item{
+    display: none;
+}
+
 .clicked{
     color: #74788D !important;
 }
@@ -21,6 +25,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .card-title-container{
@@ -47,7 +52,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 7px;
-    width: 85%;
+    width: 86%;
 }
 
 .card-footer{
@@ -67,7 +72,11 @@ body{
 }
 
 .main-content{
-    margin: 1rem 1rem;
+    margin: 0 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* title style */
@@ -180,4 +189,120 @@ body{
 /* total profile styles */
 .total-profile h1{
     margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media screen and (min-width: 420px){    
+    .title-container{
+        width: 93%;
+    }
+    
+    .buttons-container{
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 630px){    
+    .buttons-container{
+        width: 93%;
+    }
+}
+
+/* desktop styles */
+@media screen and (min-width: 750px){
+    .mobile-item{
+        display: none;
+    }
+
+    .desktop-item{
+        display: block;
+    }  
+
+    .main-content{
+        margin: 1rem 2rem;
+    }
+
+    .title-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0 0 0;
+        width: 100%;
+    }
+
+    .dashboard-title{
+        margin: unset;
+    }
+
+    .desktop-pack1{
+        display: flex;
+        gap: 10px;
+    }
+
+    .desktop-cards{
+        width: 100%;
+    }
+
+    .buttons-container{
+        width: 100%;
+    }
+
+    .total-profile{
+        width: 94%;
+    }
+
+    .pay-card button{
+        background-color: #5156BE;
+    }
+}
+
+
+@media screen and (min-width: 880px){
+    .total-profile{
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .total-profile{
+        width: 96%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .total-profile{
+        width: 97%;
+    }
+}
+
+@media screen and (min-width: 1650px){
+    .total-profile{
+        width: 98%;
+    }
 }
