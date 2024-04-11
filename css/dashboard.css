@@ -293,6 +293,10 @@ body{
     .total-profile{
         width: 96%;
     }
+
+    .main-content{
+        margin: 1rem 4.5rem;
+    }
 }
 
 @media screen and (min-width: 1200px){
